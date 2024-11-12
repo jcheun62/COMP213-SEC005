@@ -151,3 +151,87 @@ input, textarea {
     background-repeat:no-repeat;
     background-position: center;
 }
+
+#mobile {
+    display:none;
+}
+
+#desktop {
+    display:inline;
+}
+
+/* Tablet View */ 
+@media only screen and (max-width:1024px) {
+    body{
+        margin:0px;
+        background-color:#FFFFFF;
+    }
+    #wrapper{
+        min-width:0px;
+        width:auto;
+        box-shadow:none;
+        border:none;
+    }
+    header{
+        padding:0.5em 0em;
+        height:auto;
+    }
+    h1{
+        letter-spacing:0.1em;
+    }
+    main{
+        display:block;
+        width:100%;
+    }
+
+    nav{
+        display:block;
+        width:100%;
+        text-align:center;
+        padding:0.5em;
+    }
+
+    nav ul{
+        display:flex;
+        justify-content:space-around;
+    }
+
+    #homehero,#yurthero,#trailhero {
+        height:200px;
+    }
+}
+
+/* Smartphone View */ 
+@media only screen and (max-width:600px) {
+    main{
+        padding:0.1em 1em;
+        font-size:90%;
+    }
+    h1{
+        font-size:2em;
+    }
+    nav{
+        padding:0px;
+    }
+    nav ul{
+        display:block;
+    }
+    nav li{
+        display:block;
+        border-bottom:1px solid black;
+        padding:0px;
+    }
+    nav a {
+        display:block;
+        padding:0.25em 0.75em;
+    }
+    #homehero,#yurthero,#trailhero {
+        display:none;
+    }
+    #mobile{
+        display:inline;
+    }
+    #desktop{
+        display:none;
+    }
+}
